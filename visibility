@@ -2,7 +2,6 @@
 private คือ เฉพาะ method ในคลาสเดียวกันสามารถเข้าใช้ได้หมด
 protected คือ เฉพาะ method ในคลาสกลุ่มเท่านั้นที่ใช้ได้(private คลาสย่อยก็เข้ามายุ่งไม่ได้)*/
 
-////////////////////////////////////////////////
 public class People {
      private String name,lastname;
      private int age;
@@ -43,3 +42,5 @@ public class Main {
 People thai = new People
 thai.yearBirth(18);
 
+////////////////////////////
+/*abstract ไม่อนุญาติให้สร้าง instance object ให้สืบทอดได้อย่างเดียว
