@@ -1,3 +1,4 @@
+package statement
 1.Package - Package ถูกใช้โดย class ที่อยู่ข้างในจึงต้องประกาศก่อน
   ------------------------------
     package cerfitication;
