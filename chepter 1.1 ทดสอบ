@@ -1,0 +1,26 @@
+// Contents of Multiple.java
+public interface Printable {
+//.. we are not detailing this part
+}
+interface Movable {
+//.. we are not detailing this part
+}
+  ตอบ ผิดจากข้อกำหนดคือ ชื่อ file และ ชื่อ public file หรือ interface ต้องตรงกัน
+--------------------------------------------------------------------------------
+
+// contents of Multiple2.java
+interface Printable {
+//.. we are not detailing this part
+}
+class MyClass {
+//.. we are not detailing this part
+}
+interface Movable {
+//.. we are not detailing this part
+}
+public class Car {
+//.. we are not detailing this part
+}
+public interface Multiple2 {}
+  ตอบ ผิดจากข้อกำหนดคือ มี public class หรือ interface มากกว่า1อันไม่ได้
+-----------------------------------------------------------------------------
