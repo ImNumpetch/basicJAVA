@@ -15,30 +15,3 @@
     3. java will compile .java to .class
       Person.java --> java compiler(bytecode) -->Person.class
       
-//ส่วนประกอบของ class
-1.Package - Package ถูกใช้โดย class ที่อยู่ข้างในจึงต้องประกาศก่อน
-  ------------------------------
-    package cerfitication;
-    class Course{
-      ...
-    }
-  -------------------------------------------------
-  ไม่ สามารถ define หลายอันได้
-  เช่น
-    package com.cert;
-    package com.exams;  <--- define ได้อันเดียว
-    class Course{
-      ...
-     }
-   --------------------------------------------------
- *ตัวอย่าง* ผิดตรงไหน
-  interface printable{...}
-  class MyClass{...}
-  interface moveable{...}
-  public class car{...}
-  public interface multiplw2{...}
-    ตอบ class และ interface ไม่สามารถอยู่ใน source file เดียวกันได้ 
-      ถ้าใช้ใน source file เดียวกัน ควร import
-2.Execuable java application
-  
- 
