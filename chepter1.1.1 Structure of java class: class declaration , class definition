@@ -1,3 +1,4 @@
+Class declaration
 
 public final class Runner extends Person implements Athlete {}
 
