@@ -1,0 +1,10 @@
+Structure and components of a Java source code file
+  Java source code file ถูกใช้เพื่อกำหนด java entities(เอกลักษณ์) ใน class,interface, enum,and annotation.
+
+definition of an interface in java source code file
+  interface ระบุข้อตกลงของ class เพื่อ implement
+  interface จัดเป็นกลุ่มเดียวกันกับ method และ constants
+  ใน java 8 method ใน interface สามารถกำหนดเป็น static method
+Deffinition of single and multiple class in a single java source file
+  -ใน java source code file ไม่สามารถมี public class หรือ interface ได้มากกว่า 1
+  -ชื่อของ java souurce code file ต้องเป็นชื่อเดียวกับ public class หรือ nterface
