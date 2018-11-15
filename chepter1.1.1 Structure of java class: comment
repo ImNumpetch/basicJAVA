@@ -1,0 +1,38 @@
+comment มี 2 แบบ
+1. multiline comment
+   เช่น
+    class Myclass{
+      /*
+      comments that span multiple line of code
+      */
+    }
+ -------------------------------------------------------
+ * เมื่อขึ้นบรรทัดใหม่มันดูไม่จำเป็น แต่เพื่อความสวยงาม
+ 
+   /**
+    * @author MGupta // first name initial + last name
+    * @version 0.1
+    *
+    * Class to store the details of a monument
+    */
+   
+  
+2. end od line comment
+    class person{
+      String name; //variable store person name
+      String id; //6 character id gennerate by database
+    }
+    
+ตัวอย่าง
+  String name = /* Harry /* "Paul";
+  System.out.println(name);
+ output : Paul
+ ----------
+  String name = "/* Harry /* Paul";
+  System.out.println(name);
+ output : /* Harry /* Paul
+ 
+ ----------------------------------
+Java document
+  เริ่มด้วย /** จบด้วย */
+  เมื่ออยู่ใน java source file มันจะถูกแปรผลโดย javadoc
