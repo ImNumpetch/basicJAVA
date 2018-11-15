@@ -1,3 +1,4 @@
+import statement
 class และ interface ใน package เดียวกันได้สามารถใช้ class ของกันและกัน ได้ไม่มีปัญหา โดยการใช้ package name
    แต่การใช้ class จาก package อื่นๆ ต้องใช้ชื่อเต็มม .packageName .anySubpackageName .ClassName
    ตัวอย่าง String
