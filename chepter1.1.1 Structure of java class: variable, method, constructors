@@ -1,0 +1,13 @@
+variable
+-ถ้าเป็นคนละ object แต่ชื่อเดียวกัน เมื่อเปลี่ยนแปลงค่าไม่ทำให้ค่าเปลี่ยนตามกัน
+-แต่ถ้า instance variable อยู่ใน class เดียวกัน
+  จะถูกเรียกว่า class variable หรือ " static variable" เป็นการ shared object ใน class เดียวกัน
+
+method
+-class method หรือ method class ใช้ในการจัดการ static variable
+
+constructors
+-class constructor ใช้ในการ create & initialize(กำหนดค่าเริ่มต้น)ให้กับ object ใน class
+-ใน class สามารถมีได้หลาย constructor โดยแต่ละ constructor มี parametor ต่างกัน
+
+**page32
