@@ -1,0 +1,43 @@
+class และ interface ใน package เดียวกันได้สามารถใช้ class ของกันและกัน ได้ไม่มีปัญหา โดยการใช้ package name
+   แต่การใช้ class จาก package อื่นๆ ต้องใช้ชื่อเต็มม .packageName .anySubpackageName .ClassName
+   ตัวอย่าง String
+    java.lang.String.
+    เมื่อ import จะทำให้ชื่อนั้นใช้ง่ายขึ้น
+  ตัวอย่าง 1
+   
+   University                   Certification
+    -AnnualExam    ----->        - ExamQuestion
+    
+ จะได้ว่า
+ Package University;
+ import Certification.ExamQuestion;
+ class AnnualExam{
+    ExamQuestion eq;
+ }
+ 
+ ตัวอย่าง 2
+ AnnualExam ไม่อยู่ใน package  
+                                  Certification
+    AnnualExam    ----->            - ExamQuestion
+    
+ จะได้ว่า
+ import Certification.ExamQuestion;
+ class AnnualExam{
+    ExamQuestion eq;
+ }
+ * จะต้อง defined package ก่อน import
+     import Certification.ExamQuestion; <----------ผิด ทำงานไม่ได้
+     Package University;
+          class AnnualExam{
+        ExamQuestion eq;
+     }
+   
+   -----------------------------------------------
+ *ตัวอย่าง* ผิดตรงไหน
+  interface printable{...}
+  class MyClass{...}
+  interface moveable{...}
+  public class car{...}
+  public interface multiplw2{...}
+    ตอบ class และ interface ไม่สามารถอยู่ใน source file เดียวกันได้ 
+      ถ้าใช้ใน source file เดียวกัน ควร import
