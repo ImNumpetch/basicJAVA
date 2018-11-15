@@ -1,0 +1,39 @@
+1.2.1 Executable Java classes versus non-executable Java classes
+  เมื่อมันถูกส่งมอบมาที่ jvm จะเริ่มต้น execution เฉพาะ main method
+   ไม่สามารถส่งมอบงาน non-executable Java classes (ไม่มี main method)
+   มาที่ jvm เนื่องจาก jvm ไม่รู้ว่าต้อง execute method ไหน ไม่มีการระบุไว้
+
+  Application ประกอบด้วย จำนวนของ class และ interface ซึ่งถูกกำหนดด้วยหลายๆ source code file 
+ในทุกๆ source code file จะมี execution class ทำให้รู้ลำดับในการ execute
+
+1.2.2 The main method
+-ต้องเป็น public
+-ต้องเป็น static
+-ต้องชื่อ main
+-ต้อง return void
+-จะต้องมีการรับค่าตัวแปร String array หรือ ตัวแปร String
+    public static void main(String args[])
+    public static void main(String... args)
+ได้ทั้งคู่ ไม่ว่าปีกกาจะอยู่หน้าหรือหลัง
+      public static void main(String[] args)
+      public static void main(String minnieMouse[])
+สลับที่ public กับ static ได้
+    public static void main(String[] args)
+    static public void main(String[] args)
+------------------------------------------------------------------------------------                       
+overload method เป็น method ที่มีชื่อเดียวกันแต่มีลักษณะต่างกัน
+  
+  public class HelloExam {
+    public static void main(String args) {
+     System.out.println("Hello exam 2");
+    }
+    public static void main(String args[]) {
+      System.out.println("Hello exam");
+    }
+    public static void main(int number) {
+      System.out.println("Hello exam 3");
+    }
+  }
+-----------------------------------------------------------------------
+method parameter ใน main เรียกอีกอย่างว่า command-line parameters หรือ command-line values
+ซึ่งค่าจะถูกส่งผ่านไปทาง command line 
