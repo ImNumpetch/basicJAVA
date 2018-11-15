@@ -1,0 +1,28 @@
+
+public final class Runner extends Person implements Athlete {}
+
+  public  - Access modifier
+  final   - Nonaccess modifier
+  class   - keyword
+  Runner  - name of class
+  extends - keyword
+  Person  - base class name
+  implements - keyword
+  Athlete - name of implemented interface 
+  {}    - บังคับใช้
+-------------------------------------------------------------------------------
+class definition
+  class ถูกออกแบบให้ใช้เพื่อบอก behavior และ attribute ของ object
+  attribute = variable 
+  behavior = method
+-ไม่สามารถพิมพ์ Class ด้วย c ตัวใหญ่
+-state การทำงานของ class ถูกกำหนดโดย attribute หรือ instance variable
+-ไม่บังคับให้ กำหนด attribute ของ class ก่อนกำหนด method แต่ก็ไม่ค่อยเหมาะสมในการอ่าน
+  class Phone{                          class Phone{
+    String number;                          void makeCall(){}
+    void makeCall(){}                       String number;
+  }                                      }
+-behavior ถูกกำหนดด้วย method รวมถึง parameter ของ method ด้วย
+-class นิยามถึง comment และ constructure ด้วย
+
+**page 31
